@@ -12,33 +12,63 @@
             <h1>This is my heading</h1>
         </header>
         <main>
-            <h1>Welcome to Document Object Model</h1>
+            <section>
+                <h1>Welcome to Document Object Model</h1>
             <ul>
-                <li>Jalali</li>
+                <li id="band">Jalali Set</li>
                 <li>Bonobash</li>
                 <li>DOM DOM DOM DOM</li>
+                <li class="international">Dubai</li>
                 <li>Shafayet</li>
             </ul>
+            </section>
+
+            <section>
+                <h1 id="food-title">Foods i love</h1>
+                <ul>
+                    <li>Rice</li>
+                    <li>Chicken</li>
+                    <li>Beef</li>
+                    <li>Fish</li>
+                    <li class="foreign">Pizza</li>
+                    <li class="foreign">Noodles</li>
+                    <li class="foreign">Pasta</li>
+                    <li class="foreign">Burger</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1 id="book-heading">Hello</h1>
+                <ul>
+                    <li class="book">javaScript</li>
+                    <li class="book">HTML</li>
+                    <li class="book">CSS</li>
+                    <li class="book">Tailwind</li>
+                    <li class="book">React</li>
+                    <li class="book">Next.Js</li>
+                    <li class="book">DOM</li>
+                </ul>
+
         </main>
     <script>
         // console.log('Hello From JavaScipt');
         // console.log('Kire JavaScript');
-        console.log('Document Object Model');
+        // console.log('Document Object Model');
 
         student = {
             name: 'Arif Hossain',
             id: 121,
             qualification: function (level) {
-                console.log('Highest level of education', level);
+                // console.log('Highest level of education', level);
                 
             }
         }
 
         const liCollection = document.getElementsByTagName('li');
-        console.log(liCollection);
+        // console.log(liCollection);
 
         for(const li of liCollection) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
             
         }
 
@@ -46,15 +76,46 @@
 
         const allH1Tags = document.getElementsByTagName('h1');
         for(const tag of allH1Tags) {
-            console.log(tag);
-            console.log(tag.innerText);
-            console.log(tag.innerHTML);
+            // console.log(tag);
+            // console.log(tag.innerText);
+            // console.log(tag.innerHTML);
             
         }
 
+        // get by ID
+        
+        const getId = document.getElementById('food-title');
+        console.log(getId.innerText);
+        
+        getId.innerText = 'Food i loved to eat'
+
+        const bandName = document.getElementById('band');
+        bandName.innerText = 'Linkin Park'
+
+        // getElementsByClassName
+
+        const foreign = document.getElementsByClassName('foreign');
+        console.log(foreign);
+        
+        for(const element of foreign) {
+            console.log(element);
+        }
+         
+        const findInt = document.getElementsByClassName('international');
+        console.log(findInt);
+
+        const findBooks = document.getElementsByClassName('book');
+        console.log(findBooks);
+
+        const findHeading = document.getElementById('book-heading')
+        console.log(findHeading);
+        
+        findHeading.innerText = 'I love programming'
+        
+
     </script>
 
-    
+
 
     <script src="js/hello.js"></script>
 </body>
