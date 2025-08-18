@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Object Model</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
+        <header>
+            <h1>This is my heading</h1>
+        </header>
+        <main>
+            <h1>Welcome to Document Object Model</h1>
+            <ul>
+                <li>Jalali</li>
+                <li>Bonobash</li>
+                <li>DOM DOM DOM DOM</li>
+                <li>Shafayet</li>
+            </ul>
+        </main>
+    <script>
+        // console.log('Hello From JavaScipt');
+        // console.log('Kire JavaScript');
+        console.log('Document Object Model');
+
+        student = {
+            name: 'Arif Hossain',
+            id: 121,
+            qualification: function (level) {
+                console.log('Highest level of education', level);
+                
+            }
+        }
+
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+
+        for(const li of liCollection) {
+            console.log(li.innerText);
+            
+        }
+
+        // All h1 Tags
+
+        const allH1Tags = document.getElementsByTagName('h1');
+        for(const tag of allH1Tags) {
+            console.log(tag);
+            console.log(tag.innerText);
+            console.log(tag.innerHTML);
+            
+        }
+
+    </script>
+
     
+
+    <script src="js/hello.js"></script>
 </body>
 </html>
