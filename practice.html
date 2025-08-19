@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+        <main>
+            <!-- getElementsByClassName -->
+            <section class="practice">
+                    <ul>
+                        <li>Aam</li>
+                        <li>Jam</li>
+                        <li>Kathal</li>
+                        <li>Lichu</li>
+                        <li>Tormuj</li>
+                    </ul>
+            </section>
+
+            <!-- getElementById -->
+             <section id="custom">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptatum?</p>
+                <p>Quos pariatur doloribus, consequuntur molestiae beatae natus illum harum libero.</p>
+                <p>Quidem placeat quas ducimus mollitia dolorem eum enim maxime tempore!</p>
+                <p>Adipisci quisquam quod totam perspiciatis repellat alias ab voluptatum impedit.</p>
+             </section>
+
+             <!-- getElementsByTagName -->
+              <section class="tag-element">
+                <li>List item</li>
+                <p>Paragraph</p>
+                <h1>Heading</h1>
+                <span>Span tag</span>
+                <li>another list item</li>
+                <h1>Another Heading</h1>
+              </section>
+
+              <!-- querySelector & querySelectorAll -->
+               <section id="selector">
+                <p>Lorem ipsum dolor sit amet consectetur <span>Selector One</span> adipisicing elit. Natus in facere amet porro <span>Selector Two</span> praesentium error aspernatur tenetur, sapiente harum dicta quasi provident quibusdam <span>Selector Three</span> incidunt odit aliquid atque possimus illo aut.</p>
+                <h1>Hello</h1>
+                <h1>Selector</h1>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Tailwind</li>
+                <li>JavaScript</li>
+                <li>Document Object Model</li>
+                <p>Lorem ipsum dolor sit amet consectetur <span>Selector Four</span> adipisicing elit. Natus in facere amet porro <span>Selector Five</span> praesentium error aspernatur tenetur, sapiente harum dicta quasi provident quibusdam <span>Selector Six</span> incidunt odit aliquid atque possimus illo aut.</p>
+               </section>
+        </main>
+
+
+        <script>
+            // const classElement = document.getElementsByClassName('practice');
+            // for (const element of classElement) {
+            //     // console.log(element.innerText);
+            // }
+
+            // const idElement = document.getElementById('custom');
+            // // console.log(idElement.innerText);
+            
+            // const tagElement = document.getElementsByTagName('li');
+            // console.log(tagElement[6].innerText);
+            // for(const element of tagElement) {
+            //     console.log(element.innerText);
+            // }
+
+            const selectorElement = document.querySelectorAll('#selector p span')
+            for (let element of selectorElement) {
+                console.log(element.innerText);
+                
+            }
+            console.log(selectorElement[5].innerText);
+            
+
+        </script>
+
+</body>
+</html>

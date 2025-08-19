@@ -12,7 +12,9 @@
             <h1>This is my heading</h1>
         </header>
         <main>
-            <section>
+            <section id="old-dhaka" class="song">
+                <p>Lorem ipsum dolor sit, amet <span class="alias">alias</span> consectetur<span class="oli-goli">oli-goli</span> adipisicing elit. Optio, tempora?</p>
+                <h1>Lorem ipsum dolor sit <span class="lorem">some text</span> amet consectetur adipisicing elit. Nulla, repellat!</h1>
                 <h1>Welcome to Document Object Model</h1>
             <ul>
                 <li id="band">Jalali Set</li>
@@ -112,10 +114,16 @@
         
         findHeading.innerText = 'I love programming'
         
+        // querySelectorAll
+
+        const spanElements = document.querySelectorAll('#old-dhaka span');
+        for (const span of spanElements) {
+            console.log(span.innerText);
+            
+        }
+        
 
     </script>
-
-
 
     <script src="js/hello.js"></script>
 </body>
