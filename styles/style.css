@@ -18,3 +18,11 @@ h1 {
 .big {
     font-size: 150px;
 }
+
+.section-card {
+    background-color: lightgreen;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid salmon;
+    padding: 15px;
+}
