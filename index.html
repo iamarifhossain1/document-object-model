@@ -53,24 +53,24 @@
 
         </main>
     <script>
-        // console.log('Hello From JavaScipt');
-        // console.log('Kire JavaScript');
-        // console.log('Document Object Model');
+        console.log('Hello From JavaScipt');
+        console.log('Kire JavaScript');
+        console.log('Document Object Model');
 
         student = {
             name: 'Arif Hossain',
             id: 121,
             qualification: function (level) {
-                // console.log('Highest level of education', level);
+                console.log('Highest level of education', level);
                 
             }
         }
 
         const liCollection = document.getElementsByTagName('li');
-        // console.log(liCollection);
+        console.log(liCollection);
 
         for(const li of liCollection) {
-            // console.log(li.innerText);
+            console.log(li.innerText);
             
         }
 
@@ -78,9 +78,9 @@
 
         const allH1Tags = document.getElementsByTagName('h1');
         for(const tag of allH1Tags) {
-            // console.log(tag);
-            // console.log(tag.innerText);
-            // console.log(tag.innerHTML);
+            console.log(tag);
+            console.log(tag.innerText);
+            console.log(tag.innerHTML);
             
         }
 
@@ -121,6 +121,19 @@
             console.log(span.innerText);
             
         }
+
+        const foodElement = document.getElementById('food-title');
+        foodElement.style.backgroundColor = 'purple'
+        foodElement.style.borderRadius = '10px'
+        foodElement.style.padding = '10px'
+        foodElement.style.textAlign = 'center'
+        foodElement.classList.add('bg-custom');
+        foodElement.classList.add('light');
+        foodElement.classList.add('big');
+        foodElement.getAttribute('id');
+        foodElement.getAttribute('class');
+        foodElement.setAttribute('title', 'Title or tooltip by js');
+        
         
 
     </script>

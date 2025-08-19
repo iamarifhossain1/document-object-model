@@ -6,3 +6,15 @@ h1 {
 #food-title {
     color: sandybrown;
 }
+
+.bg-custom {
+    background-color: burlywood;
+}
+
+.light {
+    font-weight: 100;
+}
+
+.big {
+    font-size: 150px;
+}
